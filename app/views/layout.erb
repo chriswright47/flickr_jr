@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="/css/application.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+
+  <title></title>
+</head>
+<body>
+  <div class='header-bar'>
+    <ul>
+      <li><a href="/"><button>Home</button></a></li>
+      <li><a href="/albums"><button>Albums</button></a></li>
+      <li><a href="/users"><button>People</button></a></li>
+      <li><a href="/login"><button>Login</button></a></li>
+      <li><a href="/create_account"><button>Create Account</button></a></li>
+    </ul>
+  </div>
+  <%= yield %>
+</body>
+</html>

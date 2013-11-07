@@ -1,0 +1,9 @@
+<div class='container'>
+<h2>This is the Albums home page</h2>
+
+<ul>
+<% @albums_w_users.each do |x| %>
+  <li><a href="/albums/<%= x[:album_id] %>"><button><%= x[:album] %></button></a> by<a href="/users/<%= x[:user].id %>"> <%= x[:user].name %></a></li>
+<% end %>
+</ul>
+</div>
